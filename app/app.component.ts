@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class Hero {
   id: number;
   name: string;
-  
+
 }
 //Const HERO (caps)s
 const HEROS:Hero[] = [
@@ -84,7 +84,7 @@ export class AppComponent {
   title = 'Tour of Heroes';
   heros = HEROS;
   showHero = function(hero:Hero) {
-    alert("Hello from " + hero.name);
+    alert("Hello from " + hero.name + " my ID is "+hero.id);
   }
 
 }
