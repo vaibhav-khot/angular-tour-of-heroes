@@ -31,5 +31,5 @@ const HEROS:Hero[] = [
 
 export class AppComponent {
   title = 'Tour of Heroes';
-  hero = HEROS;
+  heros = HEROS;
 }
