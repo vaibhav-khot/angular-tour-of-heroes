@@ -1,7 +1,17 @@
 <h1>{{title}}</h1>
-<h2>{{hero.name}} details!</h2>
-<div><label>id: </label>{{hero.id}}</div>
+<!-- <h2>{{hero.name}} details!</h2>
+<div><label>id: </label>{{hero.id}}</div> -->
 <div>
-  <label>name: </label>
-  <input [(ngModel)]="hero.name" placeholder="name">
+  <!-- <label>name: </label>
+  <input [(ngModel)]="hero.name" placeholder="name"> -->
+  <h2>My Heroes</h2>
+<ul class="hero">
+  <li *ngFor="let hero of hero">
+    <h2>{{hero.name}} details!</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <!-- <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name"> -->
+  </li>
+</ul>
+
 </div>
