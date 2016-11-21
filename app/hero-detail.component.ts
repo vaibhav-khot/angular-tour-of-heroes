@@ -7,7 +7,7 @@ import { Hero } from './hero';
   templateUrl : './app/template/herodetails3.html',
 })
 
+
 export class HeroDetailComponent {
-  @Input()
-  hero: Hero;
+  @Input() hero1: Hero;
 }

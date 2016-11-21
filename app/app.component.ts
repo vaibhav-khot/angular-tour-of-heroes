@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Hero } from './hero';
+import { HeroService } from './hero.service';
 
 
 //Class  : means Type Declaration  : (Type)
@@ -7,22 +9,22 @@ import { Component } from '@angular/core';
 //   name: string;
 // }
 
-import { Hero } from './hero';
 
-
-
-//Const HERO (caps)s
-const HEROS:Hero[] = [
-  {id : 1 ,name : 'Sagar' },
-  {id : 2 ,name : 'Aaron' },
-  {id : 3 ,name : 'Shyam' },
-  {id : 4 ,name : 'Bhupendra' },
-  {id : 5 ,name : 'Sharad' },
-  {id : 6 ,name : 'Rahul' },
-  {id : 7 ,name : 'Aniket' },
-  {id : 8 ,name : 'Vaibhav' }
-];
-
+//
+//
+//
+// //Const HERO (caps)s
+// const HEROS:Hero[] = [
+//   {id : 1 ,name : 'Sagar' },
+//   {id : 2 ,name : 'Aaron' },
+//   {id : 3 ,name : 'Shyam' },
+//   {id : 4 ,name : 'Bhupendra' },
+//   {id : 5 ,name : 'Sharad' },
+//   {id : 6 ,name : 'Rahul' },
+//   {id : 7 ,name : 'Aniket' },
+//   {id : 8 ,name : 'Vaibhav' }
+// ];
+//
 
 
 
@@ -39,7 +41,8 @@ const HEROS:Hero[] = [
 // (property) = value;
 export class AppComponent {
   title = 'Tour of Heroes';
-  heros = HEROS;
+  // heros = HEROS;
+  heros: Hero[];
   selectedHero: Hero ;
 
   //Function Expression
@@ -49,4 +52,5 @@ export class AppComponent {
   //Function Statement
   // showHero = function(hero:Hero) {
   //   alert("Hello from " + hero.name + " my ID is "+hero.id);
+
 }
