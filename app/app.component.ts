@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 
 
 //Class  : means Type Declaration  : (Type)
-export class Hero {
-  id: number;
-  name: string;
+// export class Hero {
+//   id: number;
+//   name: string;
+// }
+
+import { Hero } from './hero';
 
 
 
-
-}
 //Const HERO (caps)s
 const HEROS:Hero[] = [
   {id : 1 ,name : 'Sagar' },
@@ -20,18 +21,16 @@ const HEROS:Hero[] = [
   {id : 6 ,name : 'Rahul' },
   {id : 7 ,name : 'Aniket' },
   {id : 8 ,name : 'Vaibhav' }
-  // {id : 1 ,name : "" },
-  // {id : 1 ,name : "" },
-  // {id : 1 ,name : "" },
-  // {id : 1 ,name : "" },
-  //
 ];
+
+
 
 
 
 @Component({
   selector: 'heroes-app',
-  templateUrl: './app/template/herodetails.html',
+  //templateUrl: './app/template/herodetails.html',
+  templateUrl: './app/template/herodetails1.html',
   styleUrls:['./app/styles/style.css']
 
 })
@@ -42,9 +41,12 @@ export class AppComponent {
   title = 'Tour of Heroes';
   heros = HEROS;
   selectedHero: Hero ;
+
+  //Function Expression
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
+  //Function Statement
   // showHero = function(hero:Hero) {
   //   alert("Hello from " + hero.name + " my ID is "+hero.id);
 }
