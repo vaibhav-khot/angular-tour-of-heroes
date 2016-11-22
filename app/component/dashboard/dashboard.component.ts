@@ -1,6 +1,6 @@
 import { Component , OnInit } from '@angular/core'
-import { Hero } from './hero'
-import { HeroService } from './hero.service'
+import { Hero } from '../../classes/hero'
+import { HeroService } from '../../services/hero.service'
 
 
 var module :{id :string}
@@ -8,11 +8,7 @@ var module :{id :string}
 @Component({
 moduleId: module.id,
 selector :'my-dashboard',
-templateUrl:'./template/dashboard.component.html'
-
-  // moduleId: module.id,
-  // selector: 'my-dashboard',
-  // templateUrl: 'dashboard.component.html'
+templateUrl:'../../template/dashboard.component.html'
 })
 
 
@@ -22,6 +18,7 @@ heroes :Hero [] =[]
 constructor (private heroService : HeroService ){
 
 }
+
 ngOnInit() {
   console.log(this);
 this.heroService.getHeroes().then(heroes=>{

@@ -1,12 +1,14 @@
 import { Component,OnInit } from '@angular/core';
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import { Hero } from '../../classes/hero';
+import { HeroService } from '../../services/hero.service';
+
+var module :{id :string}
 
 @Component({
+moduleId: module.id,
   selector: 'my-heroes',
-  //templateUrl: './app/template/herodetails.html',
-  templateUrl: './app/template/herodetails1.html',
-  styleUrls:['./app/styles/style.css'],
+  templateUrl: '../../template/herodetails1.html',
+  styleUrls:['../../template/styles/style.css'],
   providers : [HeroService]
 
 })

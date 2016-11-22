@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { Hero } from './hero';
+import { Hero } from '../../classes/hero';
 
+var module :{id :string}
 
 @Component({
+moduleId: module.id,
   selector: 'my-hero-detail',
-  templateUrl : './app/template/herodetails3.html',
+  templateUrl : '../../template/herodetails3.html',
 })
 
 
