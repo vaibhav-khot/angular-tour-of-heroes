@@ -23,7 +23,7 @@ ngOnInit() {
   console.log(this);
 this.heroService.getHeroes().then(heroes=>{
   console.log(heroes);
-  this.heroes=heroes;
+this.heroes = heroes.slice(1, 5);
 });
 
 
