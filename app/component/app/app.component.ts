@@ -4,8 +4,7 @@ var module :{id :string}
 @Component({
 moduleId: module.id,
 selector : 'my-app',
-templateUrl :'../../template/herodetails4.html',
-styleUrls:['../../template/styles/styles4.css']
+templateUrl :'../../template/herodetails4.html'
 })
 export class AppComponent{
 title :'Tour of Heroes'
