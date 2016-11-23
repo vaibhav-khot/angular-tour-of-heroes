@@ -15,22 +15,7 @@ import { AppRoutingModule } from './module/app-routing.module';
   imports:      [
     BrowserModule,
     FormsModule,
-  //   RouterModule.forRoot([
-  //     {
-  //       path: 'heroes',
-  //       component: HeroesComponent
-  //     },
-  //     {
-  //       path: 'dashboard',
-  //       component: DashboardComponent
-  //     },
-  //     {
-  //       path: 'detail/:id',
-  //       component: HeroDetailComponent
-  //     }
-  //   ])
-  // ], //refract all path in app-routing.module as class AppRoutingModule
-  AppRoutingModule ],
+    AppRoutingModule ],
   declarations: [ AppComponent ,
                   HeroDetailComponent ,
                   HeroesComponent,

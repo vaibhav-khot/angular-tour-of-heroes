@@ -8,7 +8,8 @@ var module :{id :string}
 @Component({
 moduleId: module.id,
 selector :'my-dashboard',
-templateUrl:'../../template/dashboard.component.html'
+templateUrl:'../../template/dashboard.component.html',
+styleUrls: [ '../../template/styles/dashboard.component.css' ]
 })
 
 

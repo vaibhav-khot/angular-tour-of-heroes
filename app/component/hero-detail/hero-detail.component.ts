@@ -14,6 +14,7 @@ var module :{id :string}
 moduleId: module.id,
   selector: 'my-hero-detail',
   templateUrl : '../../template/herodetails3.html',
+  styleUrls : []
 })
 
 
@@ -39,25 +40,6 @@ export class HeroDetailComponent implements OnInit{
          this.location.back();
        }
   @Input() hero: Hero;
+  //Declares an input property that you can update via property binding
+  //(example: <my-cmp [myProperty]="someExpression">).
 }
-
-
-
-// ngOnInit(): void {
-//   this.route.params
-//     .switchMap((params: Params) => this.heroService.getHero(+params['id']))
-//     .subscribe(hero => this.hero = hero);
-// }
-
-// this.route.params
-// .switchMap((params: Params) => {
-//   this.heroService.getHero(+params['id']);
-//   console.log("switchMap this");
-// console.log(this);
-// })
-// .subscribe(hero =>{ this.hero = hero;
-//
-// console.log(this);
-//
-//
-// });
