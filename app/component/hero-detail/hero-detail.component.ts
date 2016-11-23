@@ -1,6 +1,8 @@
 import { Component, Input ,OnInit } from '@angular/core';
 import { ActivatedRoute , Params } from '@angular/router';
 import { Location } from '@angular/common'; // class Location
+import { Headers, Http } from '@angular/http';
+
 
 //import the switchMap operator to use route parameters Observable.
 import 'rxjs/add/operator/switchMap';
@@ -31,7 +33,7 @@ export class HeroDetailComponent implements OnInit{
   console.log(this);
     this.route.params
          .switchMap((params: Params) =>
-           this.heroService.getHero(+params['id']))
+           this.heroService.getHeroes(+params['id']))
            //The hero id is a number.Route parameters are always strings.
            //So we convert the route parameter value to a number with the JavaScript (+) operator.
          .subscribe(hero => this.hero = hero);
